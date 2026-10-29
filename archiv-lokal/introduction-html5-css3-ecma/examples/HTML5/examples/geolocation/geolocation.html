@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">  
+		<title>Geolocation</title>			
+	</head>
+	<body>
+	<input type="Button" id="GetPosButton" value="GetPosition" onclick="GetGeolocation()" />
+	<input type="Button" id="stopButton" value="Stop Tracking" />
+	<script type="text/javascript">    
+			function GetGeolocation() {
+				if (navigator.geolocation) {
+				  navigator.geolocation.getCurrentPosition(success, error);
+				} else {
+				  alert("Not Supported!");
+				}
+			}
+			
+			function success(position) {
+			  console.log(position.coords.latitude);
+			  console.log(position.coords.longitude);
+			  alert(position.coords.latitude + ":" + position.coords.longitude);
+			}
+
+			function error(msg) {
+			  console.log(typeof msg == 'string' ? msg : "error");
+			  alert("Error: " + msg);
+			}
+			
+			//watch			
+			var watchId = navigator.geolocation.watchPosition(function(position) {  
+			  console.log(position.coords.latitude);
+			  console.log(position.coords.longitude);
+			});
+			
+			//stop watch
+			document.getElementById('stopButton').addEventListener('click', function() {
+					navigator.geolocation.clearWatch(watchId);
+				},false);
+		</script>
+	</body>	
+</html>

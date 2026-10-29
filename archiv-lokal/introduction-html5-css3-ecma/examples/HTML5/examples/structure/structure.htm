@@ -1,0 +1,434 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=620">
+		<title>HTML5 Struktur-Elemente</title>
+		<link rel="stylesheet" href="css/main.css" type="text/css">
+		<script src="js/h5utils.js"></script>
+	</head>
+	<body>
+		<section id="wrapper">
+			<header>
+			  <h1><abbr>HTML</abbr>5 Struktur-Elemente</h1>
+			</header>
+			<article>
+			  <p><abbr>HTML</abbr>5 Einführung, Experimente und Beispiele.</p>	  
+			  <p>Klick auf ein Browser oder Technologie Icon, um die Anzahl der Demoergebnisse zu reduzieren.
+			  Die Reduzierung ist keine <code>OR</code> Reduzierung).</p>
+			  <p id="tags" class="tags"></p>
+			  <table id="demos" class="demos" summary="Liste von HTML5 Struktur-Elementen.">
+				<thead>
+				  <tr>
+					<th>Beschreibung</th>
+					<th>Typ</th>            
+				  </tr>
+				</thead>
+				<tbody>
+					<tr>						
+						<td class="demo"><a href="#section">SECTION</a></td>
+						<td class="tags"><span class="tag">struktur</span> </td>
+					</tr>
+					<tr>						
+						<td class="demo"><a href="#header">HEADER</a></td>
+						<td class="tags"><span class="tag">struktur</span> </td>
+					</tr>
+					<tr>						
+						<td class="demo"><a href="#nav">NAV</a></td>
+						<td class="tags"><span class="tag">struktur</span> </td>
+					</tr>
+					<tr>						
+						<td class="demo"><a href="#footer">FOOTER</a></td>
+						<td class="tags"><span class="tag">struktur</span> </td>
+					</tr>					
+					<tr>						
+						<td class="demo"><a href="#article">ARTICLE</a></td>
+						<td class="tags"><span class="tag">struktur</span> </td>
+					</tr>
+					<tr>						
+						<td class="demo"><a href="#aside">ASIDE</a></td>
+						<td class="tags"><span class="tag">struktur</span> </td>
+					</tr>
+					<tr>						
+						<td class="demo"><a href="#details">DETAILS / SUMMARY</a></td>
+						<td class="tags"><span class="tag">semantik</span> </td>
+					</tr>
+					<tr>						
+						<td class="demo"><a href="#figure">FIGURE / FIGCAPTION</a></td>
+						<td class="tags"><span class="tag">semantik</span> </td>
+					</tr>
+					<tr>						
+						<td class="demo"><a href="#mark">MARK</a></td>
+						<td class="tags"><span class="tag">semantik</span> </td>
+					</tr>
+					<tr>						
+						<td class="demo"><a href="#hgroup">HGROUP</a></td>
+						<td class="tags"><span class="tag">semantik</span> </td>
+					</tr>
+					<tr>						
+						<td class="demo"><a href="#time">TIME</a></td>
+						<td class="tags"><span class="tag">semantik</span> </td>
+					</tr>
+					<tr>						
+						<td class="demo"><a href="#small">SMALL</a></td>
+						<td class="tags"><span class="tag">semantik</span> </td>
+					</tr>
+					<tr>						
+						<td class="demo"><a href="#code">CODE</a></td>
+						<td class="tags"><span class="tag">semantik</span> </td>
+					</tr>
+					<tr>						
+						<td class="demo"><a href="#address">ADDRESS</a></td>
+						<td class="tags"><span class="tag">semantik</span> </td>
+					</tr>
+					<tr>						
+						<td class="demo"><a href="#progress">PROGRESS / METER</a></td>
+						<td class="tags"><span class="tag">semantik</span> </td>
+					</tr>
+					<tr>						
+						<td class="demo"><a href="#dialog">DIALOG</a></td>
+						<td class="tags"><span class="tag">semantik</span> </td>
+					</tr>
+				</tbody>
+			  </table>      
+			</article>
+			<article>
+				<div id="section">
+					<h2>SECTION</h2>
+					<h3>Verwendung</h3>
+					Gruppiert thematisch zusammenhängende Inhalte eines Dokuments.
+					<h3>Attribute</h3>
+					keine
+					<h3>Code</h3>
+					<code>					
+					&lt;section&gt;&lt;/section&gt;						
+					</code>					
+				</div>
+				<div id="nav">
+					<h2>NAV</h2>
+					<h3>Verwendung</h3>
+					Notiert eine Navigationssektion.
+					<h3>Attribute</h3>
+					keine
+					<h3>Code</h3>
+					<code>					
+					&lt;nav&gt;&lt;/nav&gt;						
+					</code>					
+				</div>
+				<div id="header">
+					<h2>HEADER</h2>
+					<h3>Verwendung</h3>
+					Definiert für den aktuellen Abschnitt den Kopfbereich.
+					<h3>Attribute</h3>
+					keine
+					<h3>Code</h3>
+					<code>					
+					&lt;header&gt;&lt;/header&gt;						
+					</code>					
+				</div>
+				<div id="footer">
+					<h2>FOOTER</h2>
+					<h3>Verwendung</h3>
+					Definiert für den aktuellen Abschnitt eine Fußzeile.
+					<h3>Attribute</h3>
+					keine
+					<h3>Code</h3>
+					<code>					
+					&lt;footer&gt;&lt;/footer&gt;						
+					</code>					
+				</div>
+				<div id="aside">
+					<h2>ASIDE</h2>
+					<h3>Verwendung</h3>
+					Definiert einen weiteren ergänzenden Inhaltsbereich, wie bsw. eine Sidebar oder Metainformationen, innerhalb eines Inhaltsbereiches oder des Dokumentes.
+					<h3>Attribute</h3>
+					keine
+					<h3>Code</h3>
+					<code>					
+					&lt;aside&gt;&lt;/aside&gt;						
+					</code>					
+				</div>
+				<div id="article">
+					<h2>ARTICLE</h2>
+					<h3>Verwendung</h3>
+					Umfasst einen unabhängigen Abschnitt innerhalb einer Seite.
+					<h3>Attribute</h3>
+					keine
+					<h3>Code</h3>
+					<code>					
+					&lt;article&gt;&lt;/article&gt;						
+					</code>					
+				</div>
+				<div id="figure">
+					<h2>FIGURE / FIGCAPTION</h2>
+					<h3>Verwendung</h3>
+					Definiert ein inhaltlich für sich stehendes Element auf das innerhalb des Dokumentes verwiesen werden kann. Das können Tabellen, Code, usw. sein.
+					Mit figcaption kann eine Beschreibung für ein figure Element definiert werden.
+					<h3>Attribute</h3>
+					keine
+					<h3>Code</h3>
+					<code>					
+					&lt;figure id="grafik1"&gt;
+					&lt;figcaption&gt;HTML5 Werkzeuge&lt;/figcaption&gt;
+					&lt;img src="css/images/tools.jpg" alt="Bild">
+					&lt;/figure&gt;						
+					</code>
+					<h3>Beispiel</h3>
+					<figure id="grafik1">
+						<figcapture>HTML5 Werkzeuge</figcapture>
+						<img src="css/images/tools.jpg" alt="Bild">
+					</figure>
+				</div>						
+				<div id="details">
+					<h2>DETAILS / SUMMARY</h2>
+					<h3>Verwendung</h3>
+					Definiert weitere Informationen über ein Seitenelement, dass durch den Benutzer verborgen werden kann.					
+					<h3>Attribute</h3>
+					<table class="demos" summary="Liste von HTML5 Links.">
+						<thead>
+							<tr>
+								<th>Attribut</th>
+								<th>Werte</th>
+								<th>Beschreibung</th>            
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="demo">open</td>
+								<td class="demo">true, false</td>
+								<td class="demo">Sicht- oder unsichtbar für den Benutzer.</td>
+							</tr>
+						</tbody>
+					</table>					
+					<h3>Code</h3>
+					<code>					
+					&lt;details open="false"&gt;&lt;/details&gt;						
+					</code>
+					<h3>Beispiel</h3>
+					<details open="false"><summary>Meine Detailansicht.<summary>Detaildaten hier.</details>
+					<h3>Achtung</h3>
+					In keinem Browser implementiert.
+				</div>
+				<div id="mark">
+					<h2>MARK</h2>
+					<h3>Verwendung</h3>
+					Hebt einen Bereich oder Teilbereich hervor.
+					<h3>Attribute</h3>
+					keine
+					<h3>Code</h3>
+					<code>					
+					&lt;mark&gt;&lt;/mark&gt;						
+					</code>	
+					<h3>Beispiel</h3>
+					Diese Teil ist <mark>besonders</mark> wichtig.
+				</div>
+				<div id="hgroup">
+					<h2>HGROUP</h2>
+					<h3>Verwendung</h3>
+					Gruppiert thematisch zusammenhängende Inhalte mit einer eigenen Überschriftendefinition.
+					<h3>Attribute</h3>
+					keine
+					<h3>Code</h3>
+					<code>					
+					&lt;hgroup&gt;&lt;/hgroup&gt;						
+					</code>					
+				</div>
+				<div id="small">
+					<h2>SMALL</h2>
+					<h3>Verwendung</h3>
+					Markiert einem anderem Inhalt angefügte Informationen (das Kleingedruckte).
+					<h3>Attribute</h3>
+					keine
+					<h3>Code</h3>
+					<code>					
+					&lt;footer&gt;&lt;p&gt;&lt;small&gt;Copyright 2010 Mike Bild&lt;/small&gt;&lt;/p&gt;&lt;/footer&gt;					
+					</code>	
+					<h3>Beispiel</h3>
+					<footer><p><small>Copyright 2010 Mike Bild</small></p></footer>
+				</div>
+				<div id="address">
+					<h2>ADDRESS</h2>
+					<h3>Verwendung</h3>
+					Repräsentiert Kontaktinformationen nicht nur für das ganze Dokuement, sondern auch für jeden article.
+					<h3>Attribute</h3>
+					keine
+					<h3>Code</h3>
+					<code>					
+					&lt;address&gt;&lt;a href="info@aol.com"&gt;Schreiben sie uns!&lt;/a&gt;&lt;/address&gt;						
+					</code>	
+					<h3>Beispiel</h3>
+					<address><a href="info@aol.com">Schreiben sie uns!</a></address>
+				</div>
+				<div id="code">
+					<h2>CODE</h2>
+					<h3>Verwendung</h3>
+					Hebt einen Bereich oder Teilbereich als Quelltext hervor.
+					<h3>Attribute</h3>
+					keine
+					<h3>Code</h3>
+					<code>					
+					&lt;code class="language-javascript"&gt;var jsVariable ="kj";&lt;/code&gt;						
+					</code>	
+					<h3>Beispiel</h3>
+					<code class="language-javascript">var jsVariable ="kj";</code>
+				</div>
+				<div id="dialog">
+					<h2>DIALOG</h2>
+					<h3>Verwendung</h3>
+					Definiert einer Konversation.
+					<h3>Attribute</h3>
+					keine
+					<h3>Code</h3>
+					<code>					
+					&lt;dialog&gt;
+					  &lt;dt&gt;Hallo Peter&lt;/dt&gt;
+					  &lt;dd&gt;Hallo Hans&lt;/dd&gt;
+					  &lt;dt&gt;Wie gehts?&lt;/dt&gt;
+					  &lt;dd&gt;Who&#39;s there?&lt;/dd&gt;
+					  &lt;dt&gt;Gut, und selbst?&lt;/dt&gt;
+					  &lt;dd&gt;Auch gut.&lt;/dd&gt;
+					  &lt;dt&gt;Bye Hans.&lt;/dt&gt;
+					  &lt;dd&gt;Cu Peter.&lt;/dd&gt;
+					&lt;/dialog&gt;						
+					</code>	
+					<h3>Beispiel</h3>					
+					<dialog>
+					  <dt>Hallo Peter</dt>
+					  <dd>Hallo Hans</dd>
+					  <dt>Wie gehts?</dt>
+					  <dd>Who's there?</dd>
+					  <dt>Gut, und selbst?</dt>
+					  <dd>Auch gut.</dd>
+					  <dt>Bye Hans.</dt>
+					  <dd>Cu Peter.</dd>
+					</dialog>
+				</div>
+				<div id="progress">
+					<h2>PROGRESS / METER</h2>
+					<h3>Verwendung</h3>
+					Umsetzung einer Fortschrittsanzeige.
+					Progress wird zur Anzeige von Werten zwischen einem minimal und maximal Wert verwendet.
+					<h3>Attribute</h3>
+					<table class="demos" summary="Liste von HTML5 Links.">
+						<thead>
+							<tr>
+								<th>Attribut</th>
+								<th>Werte</th>
+								<th>Beschreibung</th>            
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="demo">max</td>
+								<td class="demo">Ganzzahliger Wert</td>
+								<td class="demo">Definiert den Wert der Fertigstellung.</td>
+							</tr>
+							<tr>
+								<td class="demo">value</td>
+								<td class="demo">Ganzzahliger Wert</td>
+								<td class="demo">Definiert den aktuellen Wert.</td>
+							</tr>
+						</tbody>
+					</table>
+					<h3>Code</h3>
+					<code>					
+					&lt;progress max="5" value="2"&gt;Schritt 2 von 5&lt;/progress&gt;<br>
+					&lt;meter value="0.85"&gt;25%&lt;/meter&gt;					
+					</code>	
+					<h3>Beispiel</h3>
+					<progress max="5" value="4">Schritt 2 von 5</progress><br>
+					<meter value="0.85">85%</meter>
+				</div>
+				<div id="time">
+					<h2>TIME</h2>
+					<h3>Verwendung</h3>
+					Notiert einen Teilbereich mit Datum und Zeit.
+					<h3>Attribute</h3>
+					<table class="demos" summary="Liste von HTML5 Links.">
+						<thead>
+							<tr>
+								<th>Attribut</th>
+								<th>Werte</th>
+								<th>Beschreibung</th>            
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="demo">datetime (optional, maschienenlesbar)</td>
+								<td class="demo">YYYY-MM-DDTHH:MM:SSZ</td>
+								<td class="demo">Z=UTC Time</td>
+							</tr>
+							<tr>
+								<td class="demo">pubdate</td>
+								<td class="demo"></td>
+								<td class="demo">Zeitpunkt der Veröffentlichung, z.B. für article</td>
+							</tr>
+						</tbody>
+					</table>
+					<h3>Code</h3>
+					<code>					
+					&lt;time datetime="2010-01-01T12:09:45Z"&gt;morgen&lt;/time&gt;						
+					</code>
+					<h3>Beispiel</h3>
+					<time datetime="2010-01-01T12:09:45Z">morgen</time>
+				</div>				
+			</article>
+			<footer>
+				<ul>
+					<li class="first">
+						<img alt="" class="icon" src="assets/icons/up.png">
+						<a href="#wrapper" class="scroll">Seitenanfang</a>
+					</li>
+					<li>
+						<img alt="" class="icon" src="assets/icons/home.png">
+						<a href="index.htm">Startseite</a>
+					</li>
+					<li class="last">
+						<img alt="" class="icon" src="assets/icons/contact.png">
+						<a href="kontakt.htm">Impressum</a>
+					</li>
+				</ul>			
+			</footer> 
+		</section>
+
+		<script src="js/jquery.js"></script>
+		<script>
+			$(document).delegate('span.tag', 'click', function () {
+			  var $tag = $(this), tag = $tag.text(), type = $tag.closest('td').attr('class') || 'tags';
+
+			  if ($tag.is('.selected')) {
+				$('.' + type + ' span:contains(' + tag + ')').removeClass('selected');
+			  } else {
+				$('.' + type + ' span:contains(' + tag + ')').addClass('selected');
+			  }
+
+			  // it's an AND filter
+			  var $trs = $('.' + type + ':has(span.selected)').closest('tr');
+			  if ($trs.length) {
+				$('tbody tr').hide();
+				$trs.show();
+			  } else {
+				$('tbody tr').show();
+			  }  
+			});
+
+			var html = [];
+			var tags = [];
+			$('.tags span.tag').each(function () {
+			  var $tag = $(this), tag = $tag.text();
+			  
+			  if (!tags[tag]) {
+				tags[tag] = true;
+				html.push('<span class="tag">' + tag + '</span> ');
+			  }
+			});
+
+			$('#tags').append('<strong>Reduzieren auf:</strong> ' + html.sort().join(''));
+
+			// $('tr td.demo').click(function () {
+			//   window.location = $(this).find('a').attr('href');
+			// });
+		</script>
+	</body>
+</html>

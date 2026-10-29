@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  
+    <title>Canvas</title>
+    <script type="text/javascript">
+		function draw() {
+		  var ctx = document.getElementById('canvas1').getContext('2d');
+		  var img = new Image();
+		  img.src = 'backdrop.png';
+		  img.onload = function(){
+			ctx.drawImage(img,0,0);
+			ctx.beginPath();
+			ctx.moveTo(30,96);
+			ctx.lineTo(70,66);
+			ctx.lineTo(103,76);
+			ctx.lineTo(170,15);
+			ctx.stroke();
+		  }
+		}	
+    </script>
+    <style type="text/css">
+      canvas { border: 2px solid black; }
+    </style>
+  </head><body onload="draw();">
+    <canvas id="canvas1" width="150" height="150"></canvas>
+  </body></html>

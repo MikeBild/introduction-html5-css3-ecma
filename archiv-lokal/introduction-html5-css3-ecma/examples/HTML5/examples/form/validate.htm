@@ -1,0 +1,208 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=620">
+		<title>HTML5 Links</title>
+		<link rel="stylesheet" href="css/main.css" type="text/css">
+		<script src="js/h5utils.js"></script>
+	</head>
+	<body>
+		<section id="wrapper">
+			<header>
+			  <h1><abbr>HTML</abbr>5 Demos und Beispiele</h1>
+			</header>
+			<article>
+			  <p><abbr>HTML</abbr>5 Einführung, Experimente und Beispiele.</p>	  
+			  <p>Klick auf ein Browser oder Technologie Icon, um die Anzahl der Demoergebnisse zu reduzieren.
+			  Die Reduzierung ist keine <code>OR</code> Reduzierung).</p>
+			  <p id="tags" class="tags"></p>
+			  <table class="demos" summary="Liste von HTML5 Links.">
+				<thead>
+				  <tr>
+					<th>Beschreibung</th>
+					<th>Typ</th>            
+				  </tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="demo"><a href="#outerformelements">Eingabe-Elemente außerhalb von Formularen (opera)</a></td>
+						<td class="tags"><span class="tag">form</span></td>
+					</tr>
+					<tr>
+						<td class="demo"><a href="#autocomplete">Autocomplete und Datalist (opera)</a></td>
+						<td class="tags"><span class="tag">form</span></td>
+					</tr>					
+					<tr>
+						<td class="demo"><a href="#placeholder">PlaceHolder (chrome)</a></td>
+						<td class="tags"><span class="tag">form</span></td>
+					</tr>					
+					<tr>
+						<td class="demo"><a href="#multiple">Validierung mit multiple (firefox)</a></td>
+						<td class="tags"><span class="tag">form</span></td>
+					</tr>
+					<tr>
+						<td class="demo"><a href="#validation">Validierung von Eingabe-Elementen</a></td>
+						<td class="tags"><span class="tag">form</span></td>
+					</tr>
+				</tbody>
+			  </table>
+			  <div id="outerformelements">
+					<h2>Eingabe-Elemente außerhalb von Formularen</h2>
+					<h3>Code</h3>
+					<code>					
+					&lt;input type=&quot;text&quot; name=&quot;input1&quot; form=&quot;demo1&quot;&gt;<br>
+					&lt;form id=&quot;demo1&quot;&gt;<br>
+						&lt;input type=&quot;button&quot; value=&quot;Sende Input&quot; onclick=&quot;alert(this.form.elements.namedItem(&#39;input1&#39;).value)&quot;&gt;<br>
+					&lt;/form&gt;<br>						
+					</code>
+					<h3>Beispiel</h3>
+					<input type="text" name="input1" form="demo1">
+					<form id="demo1">
+						<input type="button" value="Sende Input" onclick="alert(this.form.elements.namedItem('input1').value)">
+					</form>
+				</div>
+				<div id="autocomplete">
+					<h2>Auto-Vervollständigung</h2>
+					<h3>Code</h3>
+					<code>					
+					&lt;input type=&quot;text&quot; name=&quot;input2&quot; list=&quot;farben&quot;&gt;<br>
+					&lt;datalist id=&quot;farben&quot;&gt;<br>
+						&lt;option value=&quot;Schwarz&quot;&gt;<br>
+						&lt;option value=&quot;Gr&#252;n&quot;&gt;<br>
+						&lt;option value=&quot;Blau&quot;&gt;<br>
+					&lt;/datalist&gt;<br>					
+					</code>
+					<h3>Beispiel</h3>
+					<input type="text" name="input2" list="farben">
+					<datalist id="farben">
+						<option value="Schwarz">
+						<option value="Grün">
+						<option value="Blau">
+					</datalist>
+				</div>
+				<div id="placeholder">
+					<h2>Placeholder</h2>
+					<h3>Code</h3>
+					<code>					
+						&lt;input type=&quot;text&quot; name=&quot;username&quot; placeholder=&quot;Benutzername&quot;&gt;<br>
+						&lt;input type=&quot;password&quot; name=&quot;password&quot; placeholder=&quot;Passwort&quot;&gt;					
+					</code>
+					<h3>Beispiel</h3>
+					<input type="text" name="username" placeholder="Benutzername">
+					<input type="password" name="password" placeholder="Passwort">
+				</div>
+				<div id="validation">
+					<h2>Validierung von Eingabe-Elementen</h2>
+					Eingabe-Elemente ohne Validierung:<br>
+					hidden<br>
+					submit<br>
+					image<br>
+					reset<br>
+					object<br>					
+					<br>
+					Eingabe-Elemente mit eingebauter Syntax-Regel:<br>
+					email<br>
+					url<br>
+					number<br>
+					range<br>
+					<br>
+					Eingabe-Elemente ohne eingebauter Syntax-Regel:<br>
+					text<br>
+					textarea<br>
+					search<br>
+					telephone<br>					
+					password<br>
+					datetime, date, time, datetime-local, week, month<br>
+					checkbox<br>
+					color<br>
+					radio<br>					
+					<br>
+					Zum unterdrücken der automatischen Validierung das <mark>novalidate</mark> Atrribute am <mark>form</mark> Element anbringen.
+					<br>
+					<br>
+					Formular-Elemente die validiert werden sollen müssen folgende Bediengungen erfüllen:<br>
+					<ul>
+						<li><mark>kein disabled oder readonly</mark> Attribute</li>
+						<li>muss das <mark>name</mark> Attribute tragen</li>
+						<li>muss in einem <mark>form</mark> Element stehen oder <mark>form</mark> Attribute tragen</li>
+					</ul>
+					<h3>Code</h3>
+					<code>					
+						&lt;form id=&quot;demo2&quot;&gt;<br>				
+						&lt;p&gt;&lt;label&gt;Name: &lt;input name=name required&gt;&lt;/label&gt;&lt;/p&gt;<br>
+						&lt;p&gt;&lt;label&gt;E-mail: &lt;input name=email type=email required&gt;&lt;/label&gt;&lt;/p&gt;<br>
+						&lt;p&gt;&lt;label&gt;URL: &lt;input name=url type=url required&gt;&lt;/label&gt;&lt;/p&gt;<br>
+						&lt;p&gt;&lt;label&gt;Comment: &lt;textarea name=comment required&gt;&lt;/textarea&gt;&lt;/label&gt;&lt;/p&gt;<br>
+						&lt;p&gt;&lt;input type=submit value=Senden&gt;&lt;/p&gt;<br>
+						&lt;/form&gt;<br>					
+					</code>
+					<h3>Beispiel</h3>
+					<form id="demo2">					
+						 <p><label>Name: <input name=name required></label></p>
+						 <p><label>E-mail: <input name=email type=email required></label></p>
+						 <p><label>URL: <input name=url type=url required></label></p>
+						 <p><label>Comment: <textarea name=comment required></textarea></label></p>
+						 <p><input type=submit value=Senden></p>
+					</form>
+				</div>				
+			</article>
+			<footer>
+				<ul>
+					<li class="first">
+						<img alt="" class="icon" src="assets/icons/up.png">
+						<a href="#wrapper" class="scroll">Seitenanfang</a>
+					</li>
+					<li>
+						<img alt="" class="icon" src="assets/icons/home.png">
+						<a href="index.htm">Startseite</a>
+					</li>
+					<li class="last">
+						<img alt="" class="icon" src="assets/icons/contact.png">
+						<a href="kontakt.htm">Impressum</a>
+					</li>
+				</ul>			
+			</footer> 
+		</section>
+
+		<script src="js/jquery.js"></script>
+		<script>
+			$(document).delegate('span.tag', 'click', function () {
+			  var $tag = $(this), tag = $tag.text(), type = $tag.closest('td').attr('class') || 'tags';
+
+			  if ($tag.is('.selected')) {
+				$('.' + type + ' span:contains(' + tag + ')').removeClass('selected');
+			  } else {
+				$('.' + type + ' span:contains(' + tag + ')').addClass('selected');
+			  }
+
+			  // it's an AND filter
+			  var $trs = $('.' + type + ':has(span.selected)').closest('tr');
+			  if ($trs.length) {
+				$('tbody tr').hide();
+				$trs.show();
+			  } else {
+				$('tbody tr').show();
+			  }  
+			});
+
+			var html = [];
+			var tags = [];
+			$('.tags span.tag').each(function () {
+			  var $tag = $(this), tag = $tag.text();
+			  
+			  if (!tags[tag]) {
+				tags[tag] = true;
+				html.push('<span class="tag">' + tag + '</span> ');
+			  }
+			});
+
+			$('#tags').append('<strong>Filter demos:</strong> ' + html.sort().join(''));
+
+			// $('tr td.demo').click(function () {
+			//   window.location = $(this).find('a').attr('href');
+			// });
+		</script>
+	</body>
+</html>

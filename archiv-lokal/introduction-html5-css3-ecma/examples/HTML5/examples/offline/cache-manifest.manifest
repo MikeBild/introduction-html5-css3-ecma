@@ -1,0 +1,16 @@
+CACHE MANIFEST
+#Erste Zeile ist Pflicht
+
+#Inhalte fuer den Cache mit relativen Pfadangaben zum Manifest
+foo.jpg
+foobar.htm
+offline.htm
+cache.htm
+
+#Inhalt NICHT cachen
+NETWORK:
+bar.jpg
+online.htm
+
+FALLBACK:
+offline.htm

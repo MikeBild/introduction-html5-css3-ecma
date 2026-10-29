@@ -1,0 +1,245 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=620">
+		<title>HTML5 Multimedia-Elemente</title>
+		<link rel="stylesheet" href="css/main.css" type="text/css">
+		<script src="js/h5utils.js"></script>
+	</head>
+	<body>
+		<section id="wrapper">
+			<header>
+			  <h1><abbr>HTML</abbr>5 Multimedia-Elemente</h1>
+			</header>
+			<article>
+			  <p><abbr>HTML</abbr>5 Einführung, Experimente und Beispiele.</p>	  
+			  <p>Klick auf ein Browser oder Technologie Icon, um die Anzahl der Demoergebnisse zu reduzieren.
+			  Die Reduzierung ist keine <code>OR</code> Reduzierung).</p>
+			  <p id="tags" class="tags"></p>
+			  <table class="demos" summary="Liste von HTML5 Multimedia-Elementen.">
+				<thead>
+				  <tr>
+					<th>Attribut</th>
+					<th>Werte</th>            
+				  </tr>
+				</thead>
+				<tbody>
+					<tr>						
+						<td class="demo"><a href="#video">Video</a></td>
+						<td class="tags"><span class="tag">video</span> </td>
+					</tr>
+					<tr>						
+						<td class="demo"><a href="#audio">Audio</a></td>
+						<td class="tags"><span class="tag">audio</span> </td>
+					</tr>					
+				</tbody>
+			  </table>      
+			</article>
+			<article>				
+				<div id="video">
+					<h2>VIDEO</h2>
+					<h3>Verwendung</h3>
+					Einbinden eines Videos in das Dokument.
+					<h3>Attribute</h3>
+					<table class="demos" summary="Liste von HTML5 Links.">
+						<thead>
+							<tr>
+								<th>Attribut</th>
+								<th>Werte</th>
+								<th>Beschreibung</th>            
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="demo">src</td>
+								<td class="demo">Pfad zur Quelle</td>
+								<td class="demo"></td>
+							</tr>							
+							<tr>
+								<td class="demo">controls</td>
+								<td class="demo"></td>
+								<td class="demo">Anzeige der Steuerelemente</td>
+							</tr>
+							<tr>
+								<td class="demo">preload</td>
+								<td class="demo"></td>
+								<td class="demo">Mediainhalt vorladen</td>
+							</tr>
+							<tr>
+								<td class="demo">autoplay</td>
+								<td class="demo"></td>
+								<td class="demo">Medienwiedergabe automatisch starten</td>
+							</tr>
+							<tr>
+								<td class="demo">loop</td>
+								<td class="demo"></td>
+								<td class="demo">Wiedergabe wiederholen.</td>
+							</tr>
+							<tr>
+								<td class="demo">width</td>
+								<td class="demo">Zahl</td>
+								<td class="demo">Breite</td>
+							</tr>
+							<tr>
+								<td class="demo">height</td>
+								<td class="demo">Zahl</td>
+								<td class="demo">Höhe</td>
+							</tr>
+							<tr>
+								<td class="demo">media</td>
+								<td class="demo">handheld, all, ...</td>
+								<td class="demo"></td>
+							</tr>
+							<tr>
+								<td class="demo">type</td>
+								<td class="demo">video/mp4, video/ogg, ...</td>
+								<td class="demo"></td>
+							</tr>
+							<tr>
+								<td class="demo">codecs</td>
+								<td class="demo">theora, vorbis, ...</td>
+								<td class="demo"></td>
+							</tr>
+						</tbody>
+					</table>					
+					<h3>Code</h3>
+					<code>
+						Einfach:<br>
+						&lt;video src=&quot;..&quot; width=&quot;320&quot; heihgt=&quot;240&quot; controls&gt;<br>
+							&lt;a href=&quot;..&quot;&gt;Video ansehen.&lt;/a&gt;<br>
+						&lt;/video&gt;<br>
+						<br>
+						Erweitert:<br>
+						&lt;video width=&quot;320&quot; heihgt=&quot;240&quot; controls&gt;<br>
+							&lt;source src=&quot;...&quot; type=&quot;video/mp4&quot;&gt;<br>
+							&lt;source src=&quot;...&quot; type=&quot;video/ogg&quot;&gt;<br>
+						&lt;p&gt;<br>
+							&lt;a href=&quot;...&quot;&gt;Video ansehen.&lt;/a&gt;<br>
+						&lt;/p&gt;<br>
+					&lt;/video&gt;<br>			
+					</code>
+					<h3>Beispiel</h3>
+					<video src="assets/video/sample.webm" width="320" heihgt="240" controls>
+						<a href="..">Video ansehen.</a>
+					</video>
+					<video width="320" heihgt="240" controls>						
+						<source src="assets/video/sample.mp4" type="video/mp4">
+						<source src="assets/video/sample.webm" type="video/ogg">
+						<p>
+							<a href="...">Video ansehen.</a>
+						</p>
+					</video>
+				</div>
+				<div id="audio">
+					<h2>AUDIO</h2>
+					<h3>Verwendung</h3>
+					Einbinden eines Audio in das Dokument.
+					<h3>Attribute</h3>
+					<table class="demos" summary="Liste von HTML5 Links.">
+						<thead>
+							<tr>
+								<th>Attribut</th>
+								<th>Werte</th>
+								<th>Beschreibung</th>            
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="demo">src</td>
+								<td class="demo">Pfad zur Quelle</td>
+								<td class="demo"></td>
+							</tr>							
+							<tr>
+								<td class="demo">controls</td>
+								<td class="demo"></td>
+								<td class="demo">Anzeige der Steuerelemente</td>
+							</tr>
+							<tr>
+								<td class="demo">preload</td>
+								<td class="demo"></td>
+								<td class="demo">Mediainhalt vorladen</td>
+							</tr>
+							<tr>
+								<td class="demo">autoplay</td>
+								<td class="demo"></td>
+								<td class="demo">Medienwiedergabe automatisch starten</td>
+							</tr>
+							<tr>
+								<td class="demo">loop</td>
+								<td class="demo"></td>
+								<td class="demo">Wiedergabe wiederholen.</td>
+							</tr>
+						</tbody>
+					</table>					
+					<h3>Code</h3>
+					<code>
+						&lt;audio src=&quot;..&quot; controls&gt;<br>
+						&lt;p&gt;&lt;a href=&quot;..&quot;&gt;Audio herunterladen.&lt;/a&gt;&lt;/p&gt;<br>
+						&lt;/audio&gt;<br>
+					</code>
+					<h3>Beispiel</h3>
+					<audio src="assets/video/kalimba.mp3" controls>
+						<p><a href="..">Audio herunterladen.</a></p>
+					</audio>
+				</div>				
+			</article>
+			<footer>
+				<ul>
+					<li class="first">
+						<img alt="" class="icon" src="assets/icons/up.png">
+						<a href="#wrapper" class="scroll">Seitenanfang</a>
+					</li>
+					<li>
+						<img alt="" class="icon" src="assets/icons/home.png">
+						<a href="index.htm">Startseite</a>
+					</li>
+					<li class="last">
+						<img alt="" class="icon" src="assets/icons/contact.png">
+						<a href="kontakt.htm">Impressum</a>
+					</li>
+				</ul>			
+			</footer> 
+		</section>
+
+		<script src="js/jquery.js"></script>
+		<script>
+			$(document).delegate('span.tag', 'click', function () {
+			  var $tag = $(this), tag = $tag.text(), type = $tag.closest('td').attr('class') || 'tags';
+
+			  if ($tag.is('.selected')) {
+				$('.' + type + ' span:contains(' + tag + ')').removeClass('selected');
+			  } else {
+				$('.' + type + ' span:contains(' + tag + ')').addClass('selected');
+			  }
+
+			  // it's an AND filter
+			  var $trs = $('.' + type + ':has(span.selected)').closest('tr');
+			  if ($trs.length) {
+				$('tbody tr').hide();
+				$trs.show();
+			  } else {
+				$('tbody tr').show();
+			  }  
+			});
+
+			var html = [];
+			var tags = [];
+			$('.tags span.tag').each(function () {
+			  var $tag = $(this), tag = $tag.text();
+			  
+			  if (!tags[tag]) {
+				tags[tag] = true;
+				html.push('<span class="tag">' + tag + '</span> ');
+			  }
+			});
+
+			$('#tags').append('<strong>Reduzieren auf:</strong> ' + html.sort().join(''));
+
+			// $('tr td.demo').click(function () {
+			//   window.location = $(this).find('a').attr('href');
+			// });
+		</script>
+	</body>
+</html>
