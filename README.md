@@ -17,8 +17,8 @@
 ## Einrichten
 
 ```bash
-git clone https://github.com/MikeBild/introduction-html5-css3-ecma.git
-cd introduction-html5-css3-ecma
+git clone https://github.com/MikeBild/introduction-web-plattform.git
+cd introduction-web-plattform
 npm install
 npx playwright install chromium   # einmalig: Chromium für die Tests
 npm run typecheck                  # Typprüfung mit TypeScript strict
@@ -109,7 +109,7 @@ Das Material von 2010 bis 2016 aus der Zeit, als das Repo „Introduction to HTM
 
 ## Fehler melden
 
-Hast du einen Fehler gefunden oder eine Idee? Leg ein [Issue](https://github.com/MikeBild/introduction-html5-css3-ecma/issues) an. Sicherheitslücken meldest du bitte nicht öffentlich, sondern über das Kontaktformular auf [mikebild.dev](https://www.mikebild.dev).
+Hast du einen Fehler gefunden oder eine Idee? Leg ein [Issue](https://github.com/MikeBild/introduction-web-plattform/issues) an. Sicherheitslücken meldest du bitte nicht öffentlich, sondern über das Kontaktformular auf [mikebild.dev](https://www.mikebild.dev).
 
 ## Lizenz
 

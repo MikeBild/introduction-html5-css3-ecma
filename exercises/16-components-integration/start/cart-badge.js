@@ -11,7 +11,7 @@
 /**
  * Warenkorb-Anzeige. Bisher liest sie die Positionen als JSON aus einem Attribut.
  * TODO: Property items (Getter/Setter) statt Attribut, Attribut label beobachten,
- * Button „Leeren“ meldet cart-change mit detail.items = [], addCleanup für disconnectedCallback.
+ * Button „Warenkorb leeren“ meldet cart-change mit detail.items = [], addCleanup für disconnectedCallback.
  */
 export class CartBadge extends HTMLElement {
   /** @type {CartItem[]} */
@@ -20,7 +20,7 @@ export class CartBadge extends HTMLElement {
   constructor() {
     super()
     const root = this.attachShadow({ mode: 'open' })
-    root.innerHTML = `<span part="count"></span> <button type="button" part="clear">Leeren</button>`
+    root.innerHTML = `<span part="count"></span> <button type="button" part="clear">Warenkorb leeren</button>`
   }
 
   connectedCallback() {

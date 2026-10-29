@@ -6,7 +6,7 @@ Bei einer schrittweisen Migration leben alte und neue Oberflächen eine Weile ne
 
 1. Gib `<cart-badge>` in `start/cart-badge.js` eine Property `items` mit Getter und Setter. Arrays und Objekte gehören in Properties, nicht als JSON in Attribute.
 2. Beobachte das Attribut `label` und zeig „Label: Anzahl“.
-3. Lass „Leeren“ das Event `cart-change` mit `detail: { items: [] }` melden.
+3. Lass den Button „Warenkorb leeren“ das Event `cart-change` mit `detail: { items: [] }` melden.
 4. Lass `connectStore(element, store)` den Store mit dem Element verbinden: `items` setzen, Änderungen abonnieren, `cart-change` an `store.setState` geben. Beim Entfernen des Elements (`disconnectedCallback`) löst sich alles wieder.
 
 ## So bettest du das Element ein

@@ -47,6 +47,7 @@ describe('Web Component in fremde Frameworks einbetten', () => {
     store.setState([{ productId: 'p-zange', quantity: 3, priceCents: 1890 }])
     expect(text()).toBe('Im Korb: 3')
     const clear = /** @type {HTMLButtonElement} */ (badge().shadowRoot?.querySelector('[part="clear"]'))
+    expect(clear.textContent).toBe('Warenkorb leeren')
     clear.click()
     expect(store.getState()).toEqual([])
     expect(text()).toBe('Im Korb: 0')
