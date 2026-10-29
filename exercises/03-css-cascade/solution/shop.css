@@ -1,0 +1,43 @@
+/* Werkstatt-Shop: Tokens als Custom Properties, Reihenfolge über Cascade Layers */
+@layer reset, base, components, utilities;
+
+@layer reset {
+  #app button {
+    background: none;
+    border: 0;
+    font: inherit;
+  }
+}
+
+@layer base {
+  :root {
+    --color-accent: #1d4ed8;
+    --color-accent-strong: #1e40af;
+    --color-on-accent: #fff;
+    --radius: 0.5rem;
+    --space: 0.5rem;
+  }
+}
+
+@layer components {
+  .button {
+    background: var(--color-accent);
+    color: var(--color-on-accent);
+    padding: var(--space) calc(var(--space) * 2);
+    border-radius: var(--radius);
+
+    &:hover {
+      background: var(--color-accent-strong);
+    }
+
+    .toolbar & {
+      display: inline-flex;
+    }
+  }
+}
+
+@layer utilities {
+  .hidden {
+    display: none;
+  }
+}

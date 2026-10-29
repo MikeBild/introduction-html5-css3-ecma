@@ -1,0 +1,10 @@
+<!-- Funktioniert ohne JavaScript: Der Browser schickt das Formular per POST, der Server antwortet mit einer Seite. -->
+<form id="checkout" method="post" action="/api/orders">
+  <input type="hidden" name="productId" value="p-zange">
+  <label for="quantity">Menge</label>
+  <input id="quantity" name="quantity" type="number" min="1" value="1" required>
+  <label for="email">E-Mail</label>
+  <input id="email" name="email" type="email" autocomplete="email" required>
+  <button type="submit">Bestellen</button>
+  <output role="status"></output>
+</form>

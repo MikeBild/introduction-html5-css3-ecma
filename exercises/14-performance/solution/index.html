@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Werkstatt-Shop</title>
+</head>
+<body>
+  <main>
+    <h1>Werkzeug für die Werkstatt</h1>
+    <!-- LCP-Element: sofort und mit hoher Priorität laden, Platz reservieren -->
+    <img class="hero" src="/img/werkstatt.webp" alt="Werkbank mit Werkzeug"
+      width="1200" height="600" fetchpriority="high">
+    <ul class="products">
+      <!-- unterhalb des sichtbaren Bereichs: erst laden, wenn sie in die Nähe kommen -->
+      <li><img src="/img/hammer.webp" alt="Schlosserhammer" width="320" height="240" loading="lazy"></li>
+      <li><img src="/img/zange.webp" alt="Kombizange" width="320" height="240" loading="lazy"></li>
+      <li><img src="/img/akku.webp" alt="Akku-Schrauber" width="320" height="240" loading="lazy"></li>
+    </ul>
+  </main>
+</body>
+</html>

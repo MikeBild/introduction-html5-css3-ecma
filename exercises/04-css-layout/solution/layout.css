@@ -1,0 +1,25 @@
+/* Grid für das Raster: so viele Spalten, wie mit mindestens 14rem hineinpassen */
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+  gap: 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Flexbox für die Zeile: Name wächst, Menge und Summe behalten ihre Breite */
+.cart-line {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+
+.cart-line .name {
+  flex: 1;
+}
+
+.cart-line .total {
+  margin-inline-start: auto;
+  font-variant-numeric: tabular-nums;
+}

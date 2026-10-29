@@ -1,0 +1,26 @@
+{
+  "name": "introduction-html5-css3-ecma",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Moderne Web-Plattform ohne Framework und ohne Build: HTML, CSS, Formulare, Fetch, ES Modules, Web Components, Offline, Performance",
+  "license": "MIT",
+  "homepage": "https://workshops.mikebild.dev",
+  "engines": {
+    "node": ">=26"
+  },
+  "scripts": {
+    "start": "node server.ts",
+    "test": "vitest run",
+    "test:start": "TARGET=start vitest run",
+    "test:watch": "TARGET=start vitest",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "@vitest/browser-playwright": "^5.0.5",
+    "playwright": "^1.64.1",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.5"
+  }
+}
