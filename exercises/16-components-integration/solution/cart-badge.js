@@ -25,7 +25,7 @@ export class CartBadge extends HTMLElement {
   constructor() {
     super()
     const root = this.attachShadow({ mode: 'open' })
-    root.innerHTML = `<span part="count"></span> <button type="button" part="clear">Leeren</button>`
+    root.innerHTML = `<span part="count"></span> <button type="button" part="clear">Warenkorb leeren</button>`
     root.querySelector('button')?.addEventListener('click', () => {
       this.dispatchEvent(new CustomEvent('cart-change', { detail: { items: [] }, bubbles: true, composed: true }))
     })
