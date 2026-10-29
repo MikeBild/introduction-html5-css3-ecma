@@ -105,7 +105,7 @@ Alle Features im Kern sind Baseline, laufen also in den aktuellen Versionen von 
 
 ## Archiv
 
-Das Material von 2010 bis 2016 aus der Zeit, als das Repo „Introduction to HTML5, CSS3 & ECMA“ hieß, liegt im Ordner [`legacy/`](legacy) (HTML5-APIs, CSS3, ECMAScript 2015) und mit lokalen Beispielen und Folien im Branch [`archiv-lokal`](https://github.com/MikeBild/introduction-html5-css3-ecma/tree/archiv-lokal) – als Vergleich alt gegen neu: Application Cache, XHR2 und `float`-Layouts von damals, Service Worker, `fetch` und Grid heute.
+Das Material von 2010 bis 2016 aus der Zeit, als das Repo „Introduction to HTML5, CSS3 & ECMA“ hieß, liegt im Ordner [`legacy/`](legacy) (HTML5-APIs, CSS3, ECMAScript 2015) und mit lokalen Beispielen und Folien im Branch [`archiv-lokal`](https://github.com/MikeBild/introduction-web-plattform/tree/archiv-lokal) – als Vergleich alt gegen neu: Application Cache, XHR2 und `float`-Layouts von damals, Service Worker, `fetch` und Grid heute.
 
 ## Fehler melden
 
