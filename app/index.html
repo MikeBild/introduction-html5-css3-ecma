@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Werkstatt-Shop</title>
+  <link rel="stylesheet" href="./shop.css">
+  <script type="importmap">
+    {
+      "imports": {
+        "shop/": "../exercises/07-esm-browser/solution/lib/"
+      }
+    }
+  </script>
+  <link rel="modulepreload" href="./main.js">
+  <script type="module" src="./main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Zum Inhalt springen</a>
+  <header class="site-header">
+    <p class="logo">Werkstatt-Shop</p>
+    <nav aria-label="Hauptnavigation">
+      <ul>
+        <li><a href="#produkte">Produkte</a></li>
+        <li><a href="#checkout">Bestellen</a></li>
+      </ul>
+    </nav>
+    <cart-badge label="Warenkorb"></cart-badge>
+  </header>
+
+  <main id="main">
+    <h1>Werkzeug für die Werkstatt</h1>
+
+    <section id="produkte" aria-labelledby="produkte-titel">
+      <div class="section-head">
+        <h2 id="produkte-titel">Produkte</h2>
+        <label>
+          Sortieren
+          <select id="sort" name="sort">
+            <option value="name">nach Name</option>
+            <option value="price-asc">Preis aufsteigend</option>
+            <option value="price-desc">Preis absteigend</option>
+          </select>
+        </label>
+      </div>
+      <ul class="cards" id="products" aria-live="polite" aria-busy="true">
+        <li>Produkte werden geladen …</li>
+      </ul>
+    </section>
+
+    <section id="checkout" aria-labelledby="checkout-titel">
+      <h2 id="checkout-titel">Bestellen</h2>
+      <!-- Funktioniert auch ohne JavaScript: normaler POST an den Server -->
+      <form method="post" action="/api/orders" class="checkout">
+        <label for="productId">Produkt</label>
+        <select id="productId" name="productId" required>
+          <option value="p-hammer">Schlosserhammer</option>
+          <option value="p-zange">Kombizange</option>
+          <option value="p-akku">Akku-Schrauber</option>
+        </select>
+
+        <label for="quantity">Menge</label>
+        <input id="quantity" name="quantity" type="number" min="1" step="1" value="1" inputmode="numeric" required>
+
+        <label for="email">E-Mail</label>
+        <input id="email" name="email" type="email" autocomplete="email" spellcheck="false" required
+          placeholder="ada@example.org …">
+
+        <button type="submit">Bestellen</button>
+        <output role="status"></output>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Übungs-App zum Workshop „Moderne Web-Plattform“ · <a href="https://workshops.mikebild.dev">workshops.mikebild.dev</a></p>
+  </footer>
+</body>
+</html>

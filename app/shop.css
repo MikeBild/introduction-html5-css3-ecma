@@ -1,0 +1,118 @@
+@layer reset, base, components, utilities;
+
+@layer reset {
+  *, *::before, *::after { box-sizing: border-box; }
+  body { margin: 0; }
+  img { max-inline-size: 100%; display: block; }
+}
+
+@layer base {
+  :root {
+    color-scheme: light dark;
+    --color-bg: light-dark(#ffffff, #0f172a);
+    --color-surface: light-dark(#f4f4f5, #1e293b);
+    --color-text: light-dark(#18181b, #f1f5f9);
+    --color-muted: light-dark(#52525b, #94a3b8);
+    --color-accent: light-dark(#1d4ed8, #93c5fd);
+    --color-on-accent: light-dark(#ffffff, #0f172a);
+    --radius: 0.5rem;
+    --space: 1rem;
+    font-family: system-ui, sans-serif;
+    line-height: 1.5;
+  }
+
+  body {
+    background: var(--color-bg);
+    color: var(--color-text);
+    padding-inline: max(var(--space), env(safe-area-inset-left));
+  }
+
+  h1, h2 { line-height: 1.2; text-wrap: balance; }
+
+  a { color: var(--color-accent); }
+
+  :focus-visible {
+    outline: 3px solid var(--color-accent);
+    outline-offset: 2px;
+  }
+}
+
+@layer components {
+  .skip-link {
+    position: absolute;
+    inset-inline-start: -999px;
+    &:focus { inset-inline-start: var(--space); inset-block-start: var(--space); }
+  }
+
+  .site-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space);
+    padding-block: var(--space);
+
+    nav ul { display: flex; gap: var(--space); list-style: none; margin: 0; padding: 0; }
+    cart-badge { margin-inline-start: auto; }
+  }
+
+  .logo { font-weight: 700; margin: 0; }
+
+  .section-head {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: var(--space);
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+    gap: var(--space);
+    list-style: none;
+    padding: 0;
+
+    > li { container-type: inline-size; }
+  }
+
+  product-card {
+    background: var(--color-surface);
+    min-inline-size: 0;
+  }
+
+  product-card::part(buy) {
+    background: var(--color-accent);
+    color: var(--color-on-accent);
+    border: 0;
+    border-radius: var(--radius);
+    cursor: pointer;
+    touch-action: manipulation;
+  }
+
+  product-card::part(buy):hover { filter: brightness(1.1); }
+
+  .checkout {
+    display: grid;
+    gap: 0.25rem var(--space);
+    max-inline-size: 28rem;
+
+    input, select, button { font: inherit; padding: 0.5rem; }
+    button {
+      margin-block-start: var(--space);
+      background: var(--color-accent);
+      color: var(--color-on-accent);
+      border: 0;
+      border-radius: var(--radius);
+      cursor: pointer;
+    }
+    :user-invalid { outline: 2px solid #dc2626; }
+  }
+
+  .site-footer { color: var(--color-muted); padding-block: calc(var(--space) * 2); }
+}
+
+@layer utilities {
+  @media (prefers-reduced-motion: reduce) {
+    ::view-transition-group(*) { animation-duration: 0s; }
+  }
+}

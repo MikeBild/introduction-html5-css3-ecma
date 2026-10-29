@@ -1,0 +1,22 @@
+/* Werkstatt-Shop: Layout aus der Float-Zeit */
+.products {
+  overflow: hidden;
+}
+
+.products > li {
+  float: left;
+  width: 23%;
+  margin-right: 2%;
+}
+
+.cart-line {
+  overflow: hidden;
+}
+
+.cart-line .name {
+  float: left;
+}
+
+.cart-line .total {
+  float: right;
+}

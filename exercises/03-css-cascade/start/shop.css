@@ -1,0 +1,25 @@
+/* Werkstatt-Shop: gewachsenes CSS mit Specificity-Streit */
+#app button {
+  background: none;
+  border: 0;
+  font: inherit;
+}
+
+.button {
+  background: #1d4ed8;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}
+
+.button:hover {
+  background: #1e40af;
+}
+
+.toolbar .button {
+  display: inline-flex;
+}
+
+.hidden {
+  display: none;
+}

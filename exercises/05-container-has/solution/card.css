@@ -1,0 +1,30 @@
+/* Jeder Listenplatz ist ein Container; die Karte fragt ihn, nicht den Viewport */
+.cards > li {
+  container-type: inline-size;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+@container (inline-size >= 28rem) {
+  .card {
+    flex-direction: row;
+  }
+}
+
+/* Ausverkauft: die Karte erkennt es an ihrem Inhalt, ohne JavaScript */
+.card:has(.sold-out) {
+  opacity: 0.6;
+}
+
+.error-summary {
+  display: none;
+}
+
+/* Erst nach einer Eingabe der Nutzerin zeigen, nicht schon beim Laden */
+form:has(:user-invalid) .error-summary {
+  display: block;
+}

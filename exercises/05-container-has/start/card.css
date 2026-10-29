@@ -1,0 +1,26 @@
+/* Produktkarte: hängt am Viewport und an Klassen, die JavaScript setzt */
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+@media (min-width: 40rem) {
+  .card {
+    flex-direction: row;
+  }
+}
+
+/* wird per JavaScript gesetzt, wenn ein .sold-out-Badge in der Karte steckt */
+.card.is-sold-out {
+  opacity: 0.6;
+}
+
+/* wird per JavaScript gesetzt, sobald ein Feld ungültig ist */
+form.has-errors .error-summary {
+  display: block;
+}
+
+.error-summary {
+  display: none;
+}
