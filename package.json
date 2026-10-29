@@ -5,7 +5,7 @@
   "type": "module",
   "description": "Moderne Web-Plattform ohne Framework und ohne Build: HTML, CSS, Formulare, Fetch, ES Modules, Web Components, Offline, Performance",
   "license": "MIT",
-  "homepage": "https://workshops.mikebild.dev",
+  "homepage": "https://workshops.mikebild.dev/w/web-plattform/remote/",
   "engines": {
     "node": ">=26"
   },

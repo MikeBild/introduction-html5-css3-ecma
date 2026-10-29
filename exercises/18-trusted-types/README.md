@@ -5,7 +5,7 @@
 ## Aufgabe
 
 1. Bau `renderReview(element, review)` ohne `innerHTML`: Elemente erzeugen, Text per `textContent`, dann `replaceChildren`.
-2. Leg mit `createShopPolicy(factory)` die Policy `shop` über `factory.createPolicy` an. Ihr `createHTML` escaped `&`, `<`, `>`, `"` und `'`.
+2. Leg mit `createShopPolicy(factory)` die Policy `shop` über `factory.createPolicy` an. Ihr `createHTML` maskiert `&`, `<`, `>`, `"` und `'`.
 3. Gib ohne `factory` ein Objekt mit derselben `createHTML`-Funktion zurück.
 4. Starte den Shop mit `CSP=1 npm start` (Report-Only) und such in der Konsole nach Trusted-Types-Verstößen. Welche Stellen setzen noch Strings in `innerHTML`?
 

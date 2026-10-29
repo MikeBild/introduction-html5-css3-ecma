@@ -22,7 +22,7 @@ export const enhanceForm = (form, fetchFn = fetch) => {
         headers: { accept: 'application/json' },
       })
       if (!response.ok) {
-        if (status) status.textContent = 'Die Bestellung ist nicht angekommen. Prüf deine Angaben und versuch es noch einmal.'
+        if (status) status.textContent = 'Die Bestellung ließ sich nicht abschließen. Prüf deine Angaben und versuch es noch einmal.'
         return
       }
       const order = await response.json()
