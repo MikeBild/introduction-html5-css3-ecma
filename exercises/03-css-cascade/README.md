@@ -1,6 +1,6 @@
 # 03 · Custom Properties, Cascade Layers, Nesting
 
-In `start/shop.css` gewinnt der Reset mit `#app button` gegen jede Klasse: Der Kaufen-Button bleibt farblos. Der übliche Ausweg wäre `!important` oder eine noch längere Selektorkette. Cascade Layers lösen das anders: Die Reihenfolge der Layers schlägt die Spezifität.
+In `start/shop.css` gewinnt der Reset mit `#app button` gegen jede Klasse: Der Kaufen-Button bleibt farblos. Der übliche Ausweg wäre `!important` oder eine noch längere Selektorkette. Cascade Layers lösen das anders: Die Reihenfolge der Layers schlägt die Specificity.
 
 ## Aufgabe
 

@@ -9,7 +9,7 @@
  */
 
 // Früher: window.Shop.cart = [] und Funktionen, die dieses globale Array verändern.
-// TODO: Mach daraus reine Funktionen, die einen neuen Warenkorb liefern.
+// TODO: Mach daraus Pure Functions, die einen neuen Warenkorb liefern.
 
 /**
  * @param {readonly CartItem[]} items

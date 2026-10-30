@@ -53,7 +53,7 @@ export class CartBadge extends HTMLElement {
   }
 
   /**
-   * Merkt sich eine Aufräumfunktion für den Moment, in dem das Element das DOM verlässt.
+   * Merkt sich eine Cleanup-Function für den Moment, in dem das Element das DOM verlässt.
    * @param {() => void} cleanup
    */
   addCleanup(cleanup) {
